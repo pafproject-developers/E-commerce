@@ -1,0 +1,230 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+
+<style>
+        .titleDiv{
+            width: 100%;
+            height: 100px;
+            font-family: serif;
+            font-size: x-large;
+            font-weight: 900;
+            color: black;
+            margin-top: 20px;
+        }
+        .content{
+            width: 800px;
+            height: 500px;
+            border: 1px solid whitesmoke;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            opacity: 0.8;
+            margin-left: 20px;
+            float: left;
+        }
+        .para1{
+            margin-left: 40px;
+            margin-right: 40px;
+            float: left;
+        }
+        img{
+            margin-left: 200px;
+
+        }
+        .para2{
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20em;
+        }
+        .para3{
+            width: 250px;
+            float: right;
+        }
+        .buttonPanel{
+            height: 500px;
+            width: 315px;
+            border: 1px solid whitesmoke;
+            float: left;
+            margin-left: 100px;
+            background-color: whitesmoke;
+            opacity: 0.8;
+            border-radius: 10px;
+        }
+        #r0{
+            float: top;
+            margin-top: 20px;
+            border: 1px groove brown;
+            background-color: black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #r1{
+            float: top;
+            margin-top: 0px;
+            border: 1px groove brown;
+            background-color: black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #r2{
+            float: top;
+            margin-top: 20px;
+            border: 1px groove brown;
+            background-color: black;
+            border-radius: 5px;
+            text-align: center;
+
+        }
+        #r3{
+            float: top;
+            margin-top: 20px;
+            border: 1px groove brown;
+            background-color: black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #r4{
+            float: top;
+            margin-top: 20px;
+            border: 1px groove brown;
+            background-color: black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #r5{
+            float: top;
+            margin-top: 20px;
+            border: 1px groove brown;
+            background-color: black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #r6{
+            float: top;
+            margin-top: 20px;
+            border: 1px groove brown;
+            background-color: black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #r7{
+            float: top;
+            margin-top: 20px;
+            border: 1px groove brown;
+            background-color: black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #r8{
+            float: top;
+            margin-top: 20px;
+            border: 1px groove brown;
+            background-color: black;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+    
+</head>
+<body style="background-image: url('car.png');background-size:1270px 700px" />
+<center>
+    <div class="titleDiv">Vehicle Rental System</div>
+</center>
+<div class="content">
+    <h2 style="color: black; margin-left: 300px;">Overview</h2>
+
+   
+    <p class="para2" style="align:center">
+        UHS is the world’s leading provider of Vehicle Hire Software designed for all size of vehicle rental companies. For the more than 10 years we have been selling affordable solutions for auto rental businesses to increase efficiency and profitability at a very low cost. Our software has the latest technologies and is designed for global small-to-large rental businesses. Our software products are used by hundreds of car rental companies all around the world demanding advanced features in their operations. You can be sure that your daily rental operations will run smoothly..<br>
+    </p> 
+
+</div>
+<div class="buttonPanel">
+	<c:choose>
+		<c:when test="${not empty sessionScope.uname}">
+			<c:if test="${sessionScope.uname == 'admin'}">
+				<h2 id="r0">
+					<a href="Home.html">Home</a>
+				</h2>
+				<h2 id="r1">
+					<a href="About_Us.html">About us</a>
+				</h2>
+				<h2 id="r4">
+					<a href="">Book Product</a>
+				</h2>
+				<h2 id="r5">
+					<a href="">Add Producte</a>
+				</h2>
+				<h2 id="r6">
+					<a href="">View Transaction</a>
+				</h2>
+				<h2 id="r7">
+					<a href="">Customer Care</a>
+				</h2>
+				<h2 id="r8">
+					<a href="">Admin Dashboard</a>
+				</h2>
+				<h2 id="r7">
+					<a href="logout">Log Out</a>
+				</h2>
+			</c:if>
+			<c:if test="${sessionScope.uname != 'admin'}">
+				<h2 id="r0">
+					<a href="">Home</a>
+				</h2>
+				<h2 id="r1">
+					<a href="">About us</a>
+				</h2>
+				<h2 id="r4">
+					<a href="">Book Product</a>
+				</h2>
+				<h2 id="r6">
+					<a href="">View Transaction</a>
+				</h2>
+				<h2 id="r7">
+					<a href="">Customer Care</a>
+				</h2>
+				<h2 id="r7">
+					<a href="logout">Log Out</a>
+				</h2>
+				
+			</c:if>
+		</c:when>
+		<c:otherwise>
+						<h2 id="r0">
+					<a href="Home.html">Home</a>
+				</h2>
+				<h2 id="r1">
+					<a href="About_Us.html">About us</a>
+				</h2>
+				<h2 id="r2">
+					<a href="">Login</a>
+				</h2>
+				<h2 id="r3">
+					<a href="">Register</a>
+				</h2>
+				<h2 id="r4">
+					<a href="">Book Product</a>
+				</h2>
+				<h2 id="r6">
+					<a href="">View Transaction</a>
+				</h2>
+				<h2 id="r7">
+					<a href="customercare.html">Customer Care</a>
+				</h2>
+				
+		</c:otherwise>
+	</c:choose>
+	
+</div>
+</body>
+</html>
